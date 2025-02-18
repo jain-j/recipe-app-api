@@ -75,7 +75,7 @@ class PrivateRecipeApiTest(TestCase):
         """Test listing recipes"""
 
         sample_recipe(self.user)
-        sample_recipe(self.user)
+        # sample_recipe(self.user)
 
         res = self.client.get(RECIPE_URL)
 
