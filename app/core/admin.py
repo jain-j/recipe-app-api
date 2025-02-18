@@ -33,5 +33,8 @@ class UserAdmin(BaseUserAdmin):
         }),
     )
 
+# This registering makes models manageable through django admin interface
 admin.site.register(models.User, UserAdmin)
 admin.site.register(models.Recipe)
+admin.site.register(models.Tag)
+admin.site.register(models.Ingredient)
